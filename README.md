@@ -4,8 +4,8 @@ sunspot_with_kaminari extends sunspot to have the required methods for paginatio
 
 ### Installation & Usage
 
-on `Gemfile` add
+on `Gemfile`
 
- gem 'kaminari'
- gem "sunspot_rails"
- gem "sunspot_with_kaminari"
+      gem 'kaminari'
+      gem "sunspot_rails"
+      gem "sunspot_with_kaminari"
