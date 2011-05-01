@@ -28,6 +28,14 @@ module Sunspot
       def limit_value
         @query.per_page
       end
+      
+      def empty?
+        total == 0
+      end
+      
+      def any?
+        total > 0
+      end
     end
   end
 end
