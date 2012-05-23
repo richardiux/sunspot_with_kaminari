@@ -32,6 +32,19 @@ module SunspotWithKaminari
       def any?
         total > 0
       end
+	  
+      def offset_value
+        @query.per_page * (@query.page - 1)
+      end
+
+      def total_count
+        total
+      end
+	  
+	  def length
+		hits.size
+	  end
+	  
     end
   end
 end
