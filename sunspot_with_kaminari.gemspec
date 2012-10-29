@@ -13,9 +13,9 @@ Gem::Specification.new do |s|
   s.description = %q{Extends sunspot to be compatible with kaminari for pagination}
 
   s.rubyforge_project = "sunspot_with_kaminari"
-  
+
   s.add_dependency 'sunspot_rails'
-  s.add_dependency 'kaminari'
+  s.add_dependency 'kaminari', '>= 0.14.0'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
