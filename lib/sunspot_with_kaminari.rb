@@ -13,7 +13,7 @@ module SunspotWithKaminari
       #
       # Integer:: Total number of pages for matching documents
       #
-      def num_pages
+      def total_pages
         (total.to_f / @query.per_page).ceil
       end
 
