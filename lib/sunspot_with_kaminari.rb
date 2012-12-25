@@ -22,7 +22,7 @@ module SunspotWithKaminari
       # Integer:: Number of records displayed per page
       #
       def limit_value
-        @query.per_page
+        @query.per_page || Kaminari.config.default_per_page
       end
 
       def empty?
