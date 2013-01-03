@@ -1,3 +1,5 @@
+require 'sunspot'
+
 module SunspotWithKaminari
   module Search
     module AbstractSearchInstanceMethods
@@ -31,6 +33,11 @@ module SunspotWithKaminari
 
       def any?
         total > 0
+      end
+
+      def page(current_page)
+        query.paginate(current_page, nil)
+        self.execute.results
       end
     end
   end
