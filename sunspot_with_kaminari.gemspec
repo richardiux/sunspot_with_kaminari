@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "sunspot_with_kaminari"
 
+  s.add_dependency 'sunspot'
   s.add_dependency 'sunspot_rails'
   s.add_dependency 'kaminari', '>= 0.14.0'
 
