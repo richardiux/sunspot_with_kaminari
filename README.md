@@ -8,7 +8,7 @@ on `Gemfile`
 
       gem 'kaminari'
       gem "sunspot_rails"
-      gem "sunspot_with_kaminari", '~> 0.1'
+      gem "sunspot_with_kaminari", '~> 0.2.0'
       
 on the controller
 
