@@ -27,6 +27,22 @@ module SunspotWithKaminari
         @query.per_page || Kaminari.config.default_per_page
       end
 
+      def total_count
+        total
+      end
+      
+      # ==== Returns
+      #
+      # Integer:: Offset to the beginning
+      #
+      def offset_value
+        (current_page - 1) * limit_value
+      end
+
+      def last_page?
+        @query.page >= total_pages
+      end
+
       def empty?
         total == 0
       end
