@@ -29,4 +29,4 @@ on the view you want to do something like this:
       
 to display current page and total pages information you can use:
 
-      <%= page_entries_info @products %>
+      <%= page_entries_info @products, :entry_name => 'product' %>
