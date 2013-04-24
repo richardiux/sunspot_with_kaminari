@@ -26,3 +26,7 @@ on the view you want to do something like this:
       </ul>
       
       <%= paginate @products, :window => 1 %>
+      
+to display current page and total pages information you can use:
+
+      <%= page_entries_info @products %>
