@@ -1,5 +1,20 @@
 ## sunspot_with_kaminari
 
+### Sunspot now supports kaminari and this gem is no longer necessary
+
+A basic example on how to paginate with sunspot's buit-in support for kaminari:
+
+```ruby
+# controller
+@results = Post.search do
+  fulltext "pizza"
+  paginate page: params[:page], per_page: 20
+end.results
+
+# views
+<%= paginate @results, theme: "bootstrap" %>
+```
+
 sunspot_with_kaminari extends sunspot to have the required methods for pagination with kaminari.
 
 ### Installation & Usage
